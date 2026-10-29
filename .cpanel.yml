@@ -1,0 +1,17 @@
+---
+# Publicação do cPanel — "Deploy HEAD Commit".
+#
+# O repositório é o próprio site: a raiz tem o `index.html`, a pasta `_assets`
+# e os favicons. A publicação copia esses elementos para a raiz do domínio em
+# vez de copiar a pasta toda, para o `.git` e este ficheiro nunca chegarem à
+# web.
+#
+# A pasta `_assets` é trocada por inteiro: cada build dá nomes novos aos
+# ficheiros (hash do conteúdo) e os antigos ficariam a ocupar espaço sem nunca
+# mais serem pedidos.
+deployment:
+  tasks:
+    - export DEPLOYPATH=$HOME/public_html
+    - /bin/cp index.html favicon.ico favicon.svg apple-touch-icon.png $DEPLOYPATH
+    - /bin/rm -rf $DEPLOYPATH/_assets
+    - /bin/cp -R _assets $DEPLOYPATH
