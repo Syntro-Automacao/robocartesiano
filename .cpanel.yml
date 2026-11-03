@@ -15,7 +15,7 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/cartesiano/public_html/
-    - /bin/cp index.html favicon.ico favicon.svg apple-touch-icon.png $DEPLOYPATH
+    - /bin/cp index.html favicon.ico favicon.svg apple-touch-icon.png robots.txt sitemap.xml $DEPLOYPATH
     - /bin/rm -rf $DEPLOYPATH/_assets
     - /bin/cp -R _assets $DEPLOYPATH
     - /bin/rm -rf $DEPLOYPATH/synbot-mini-25

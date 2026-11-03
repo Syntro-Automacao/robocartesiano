@@ -1,0 +1,5 @@
+# Robos cartesianos - Syntro Robotica e Automacao
+User-agent: *
+Allow: /
+
+Sitemap: https://www.robocartesiano.com.br/sitemap.xml

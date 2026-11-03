@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  As duas páginas do site. Sem `lastmod`: o Google ignora-o quando não é de
+  confiança, e uma data errada só atrapalha. Uma página nova acrescenta-se
+  aqui à mão.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.robocartesiano.com.br/</loc>
+  </url>
+  <url>
+    <loc>https://www.robocartesiano.com.br/synbot-mini-25/</loc>
+  </url>
+</urlset>
