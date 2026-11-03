@@ -8,9 +8,15 @@
 # A pasta _assets e trocada por inteiro: cada build da nomes novos aos
 # ficheiros (hash do conteudo) e os antigos ficariam a ocupar espaco sem nunca
 # mais serem pedidos.
+#
+# As pastas das paginas (uma por pasta, com o index.html dentro) tambem sao
+# trocadas por inteiro, pela mesma razao: um endereco que desapareca nao deve
+# ficar a responder na web.
 deployment:
   tasks:
     - export DEPLOYPATH=/home/cartesiano/public_html/
     - /bin/cp index.html favicon.ico favicon.svg apple-touch-icon.png $DEPLOYPATH
     - /bin/rm -rf $DEPLOYPATH/_assets
     - /bin/cp -R _assets $DEPLOYPATH
+    - /bin/rm -rf $DEPLOYPATH/synbot-mini-25
+    - /bin/cp -R synbot-mini-25 $DEPLOYPATH
