@@ -20,3 +20,7 @@ deployment:
     - /bin/cp -R _assets $DEPLOYPATH
     - /bin/rm -rf $DEPLOYPATH/synbot-mini-25
     - /bin/cp -R synbot-mini-25 $DEPLOYPATH
+    - /bin/rm -rf $DEPLOYPATH/contato
+    - /bin/cp -R contato $DEPLOYPATH
+    - /bin/rm -rf $DEPLOYPATH/privacidade
+    - /bin/cp -R privacidade $DEPLOYPATH
