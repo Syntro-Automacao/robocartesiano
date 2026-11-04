@@ -1,0 +1,1 @@
+function e(e={}){let{root:t=document,threshold:n=.12,rootMargin:r=`0px 0px -8% 0px`}=e,i=new IntersectionObserver(e=>{for(let t of e)t.isIntersecting&&(t.target.classList.add(`is-visible`),i.unobserve(t.target))},{threshold:n,rootMargin:r});for(let e of t.querySelectorAll(`.reveal`))i.observe(e)}export{e as t};
