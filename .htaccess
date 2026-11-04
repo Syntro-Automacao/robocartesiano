@@ -1,0 +1,7 @@
+# Pagina 404 - robo cartesiano.
+#
+# O Apache procura este ficheiro quando o endereco pedido nao existe. A
+# diretiva ErrorDocument mantem a resposta como HTTP 404 de verdade: sem ela,
+# o servidor poderia responder 200 (ou redirecionar) e os motores de busca
+# tratariam o endereco errado como uma pagina valida.
+ErrorDocument 404 /404.html

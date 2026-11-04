@@ -1,0 +1,77 @@
+<!DOCTYPE html><!--
+  A página 404 não se anuncia às buscas (`noindex`) e responde a endereços que
+  não existem: é o Apache que a serve, através do `ErrorDocument` do
+  `.htaccess`. Aqui reutiliza-se a moldura das páginas internas — as faixas, o
+  cabeçalho e o rodapé — para quem se perde reconhecer o site onde está.
+--><html lang="pt-BR"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Página não encontrada · Robôs cartesianos | Syntro</title><meta name="description" content="A página que você procura não foi encontrada. Explore os robôs cartesianos da Syntro e encontre a solução para o seu projeto."><!--
+      As fotografias do equipamento são o que dá valor ao resultado, por isso
+      pede-se a miniatura grande de propósito. A página 404 é a exceção: pede
+      para ficar fora das buscas, porque responde a endereços que não existem.
+    --><meta name="robots" content="noindex, nofollow"><link rel="canonical" href="https://www.robocartesiano.com.br/404/"><meta name="theme-color" content="#f4f1ec"><meta name="color-scheme" content="light dark"><meta property="og:type" content="website"><meta property="og:site_name" content="Robôs cartesianos · Syntro"><meta property="og:locale" content="pt_BR"><meta property="og:url" content="https://www.robocartesiano.com.br/404/"><meta property="og:title" content="Página não encontrada · Robôs cartesianos | Syntro"><meta property="og:description" content="A página que você procura não foi encontrada. Explore os robôs cartesianos da Syntro e encontre a solução para o seu projeto."><!--
+      Sem imagem não há cartão largo: melhor pedir o formato pequeno do que
+      entregar um cartão vazio.
+    --><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Página não encontrada · Robôs cartesianos | Syntro"><meta name="twitter:description" content="A página que você procura não foi encontrada. Explore os robôs cartesianos da Syntro e encontre a solução para o seu projeto."><link rel="icon" href="/favicon.ico"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400%3B500&amp;family=IBM+Plex+Sans:wght@100..700&amp;family=Saira:wght@300..600&amp;display=swap"><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://syntro.com.br/#organizacao","name":"Syntro Robótica e Automação","url":"https://syntro.com.br/","logo":"https://www.robocartesiano.com.br/_assets/logo.eD2Bp1Nt.svg"},{"@type":"WebSite","name":"Robôs cartesianos · Syntro","url":"https://www.robocartesiano.com.br/","inLanguage":"pt-BR","publisher":{"@id":"https://syntro.com.br/#organizacao"}}]}</script><!-- Dados estruturados próprios da página — a trilha, por exemplo. --><script>
+      (function () {
+        var root = document.documentElement;
+        root.classList.add('js');
+
+        // O tema resolve-se antes da primeira pintura, para não haver clarão.
+        // Se a pessoa já escolheu um tema, a escolha vence; caso contrário,
+        // o arranque padrão é sempre escuro.
+        var saved = null;
+        try {
+          saved = window.localStorage.getItem('tema');
+        } catch (error) {
+          saved = null;
+        }
+        if (saved === 'light' || saved === 'dark') {
+          root.dataset.theme = saved;
+        } else {
+          root.dataset.theme = 'dark';
+        }
+
+        var themeMeta = document.querySelector('meta[name="theme-color"]');
+        if (themeMeta !== null) {
+          themeMeta.setAttribute(
+            'content',
+            root.dataset.theme === 'dark' ? '#141311' : '#f4f1ec',
+          );
+        }
+      })();
+    </script><link rel="stylesheet" href="/_assets/pagina.B2dgQeyB.css"><link rel="stylesheet" href="/_assets/Base.CLbrkBze.css"><style>.erro__inner{grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);align-items:center;gap:clamp(2rem,5vw,4.5rem);padding-top:clamp(7.5rem,18vh,11rem);padding-bottom:clamp(3.5rem,9vh,6.5rem);display:grid}.erro__copy{justify-items:start;gap:clamp(.9rem,2.2vh,1.5rem);display:grid}.erro__code{font-family:var(--font-display);letter-spacing:-.05em;color:var(--band-ink);margin:0;font-size:clamp(4.5rem,15vw,11rem);font-weight:300;line-height:.8}@supports ((-webkit-background-clip:text) or (background-clip:text)){.erro__code{background:linear-gradient(165deg, var(--band-ink) 46%, var(--band-gold));-webkit-text-fill-color:transparent;-webkit-background-clip:text;background-clip:text}}.erro__title{max-width:20ch;font-family:var(--font-display);letter-spacing:-.015em;font-size:clamp(1.9rem,3.6vw,3.1rem);font-weight:400;line-height:1.04}.erro__lead{max-width:44ch;color:var(--band-ink-2);font-size:clamp(1.0625rem,1.35vw,1.3125rem);line-height:1.55}.erro__actions{flex-wrap:wrap;gap:.8rem;margin-top:.5rem;display:flex}.erro__aside{margin:.4rem 0 0}.erro__link{border-bottom:1px solid var(--band-hairline);font-family:var(--font-mono);letter-spacing:.24em;text-transform:uppercase;color:var(--band-ink-3);transition:color .32s var(--ease-soft), border-color .32s var(--ease-soft);align-items:center;gap:.55rem;padding-bottom:.2rem;font-size:.6875rem;font-weight:500;display:inline-flex}.erro__link:hover,.erro__link:focus-visible{color:var(--band-ink);border-bottom-color:var(--band-hairline-strong)}.erro__link-arrow{transition:transform .4s var(--ease-soft);display:inline-block}.erro__link:hover .erro__link-arrow,.erro__link:focus-visible .erro__link-arrow{transform:translate(.25rem)}.erro__figure{isolation:isolate;place-items:end center;min-height:clamp(16rem,44vh,32rem);margin:0;display:grid;position:relative}.erro__figure:before{content:"";z-index:-1;background:radial-gradient(circle at 50% 60%,#c8a96e29,#c8a96e00 68%);border-radius:50%;position:absolute;inset:6% 2% 4%}.erro__figure img{object-fit:contain;filter:drop-shadow(0 34px 46px #00000080);width:auto;max-width:min(100%,34rem);height:auto;max-height:clamp(16rem,46vh,32rem);display:block}@media (width<=899px){.erro__inner{grid-template-columns:minmax(0,1fr);gap:clamp(1.8rem,6vw,3rem);padding-top:clamp(7rem,22vh,9rem)}.erro__code{font-size:clamp(4rem,26vw,7rem)}.erro__figure{place-items:center;min-height:0}.erro__figure img{max-width:min(80%,22rem);max-height:38vh}.erro__actions{width:100%}.erro__actions .button{flex:100%;justify-content:center}}
+</style></head> <body> <!--
+      Ligação de salto: a primeira paragem do teclado. Fica escondida até
+      receber foco, para não competir com a composição.
+    --><a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>  <div class="band band--dark erro"> <header class="site-header"> <!--
+    O glifo de três linhas é o mesmo do botão de menu da página inicial, para
+    se reconhecer como a mesma porta. Aqui leva à coleção, que vive na página
+    inicial — as fichas de cada robô são de lá.
+  --><a class="site-header__menu" href="/" aria-label="Menu — coleção de robôs cartesianos"> <span class="site-header__glyph" aria-hidden="true"> <span></span><span></span><span></span> </span> <span class="site-header__menu-label">Menu</span> </a> <a class="site-header__brand" href="/">Robôs cartesianos</a> <a class="site-header__cta" href="https://wa.me/5519996362101?text=Ol%C3%A1!%20Vim%20pelo%20site%20Rob%C3%B4s%20cartesianos%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto%20de%20automa%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer">Solicitar proposta</a> </header> <main class="band__inner erro__inner" id="conteudo" tabindex="-1"> <div class="erro__copy"> <p class="eyebrow reveal">Syntro · Robótica e Automação</p> <p class="erro__code reveal">404</p> <h1 class="erro__title reveal">Este caminho está fora de rota.</h1> <p class="erro__lead reveal">
+A página que você procura não foi encontrada. Explore nossos robôs
+          cartesianos e encontre a solução para o seu projeto.
+</p> <div class="erro__actions reveal"> <a class="button button--solid" href="/">Voltar ao início</a> <a class="button button--ghost" href="/#colecao">Explorar robôs cartesianos</a> </div> <p class="erro__aside reveal"> <a class="erro__link" href="https://wa.me/5519996362101?text=Ol%C3%A1!%20Vim%20pelo%20site%20Rob%C3%B4s%20cartesianos%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto%20de%20automa%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer">
+Solicitar orçamento
+<span class="erro__link-arrow" aria-hidden="true">→</span> </a> </p> </div> <!--
+        A peça apoia-se na base da coluna e o vazio acima deixa-a respirar, no
+        mesmo tom das secções Motion Control e Pórtico Gantry.
+      --> <figure class="erro__figure reveal">  <img src="/_assets/motion-control-03.DPs-pBID_e99Bv.webp" srcset="/_assets/motion-control-03.DPs-pBID_jkASn.webp 533w, /_assets/motion-control-03.DPs-pBID_1wnQxw.webp 933w, /_assets/motion-control-03.DPs-pBID_e99Bv.webp 1333w" alt="Conjunto cartesiano compacto da linha Motion Control, com estrutura modular e movimentação de precisão." sizes="(max-width: 899px) 76vw, 38vw" loading="eager" decoding="async" width="1333" height="1180"> </figure> </main> </div> <footer class="band band--dark foot"> <div class="band__inner foot__inner"> <p> <a href="https://syntro.com.br/" target="_blank" rel="noopener noreferrer">Syntro · Robótica e Automação</a> </p> <nav class="foot__links" aria-label="Ligações do rodapé"> <a href="/">Coleção de robôs</a> <a href="/contato">Contacto</a> <a href="/privacidade">Política de Privacidade</a> </nav> </div> </footer>  <!--
+      Aviso de privacidade — a primeira coisa que se lê. Vive aqui, e não numa
+      página, para aparecer em todo o site até a pessoa responder. Só serve
+      para isso: o site não usa cookies de análise nem de publicidade. Começa
+      fechado e é o script que o abre, a quem ainda não respondeu.
+    --> <section class="consent" data-consent data-state="closed" aria-label="Aviso de privacidade"> <div class="consent__inner"> <div class="consent__text"> <p class="consent__eyebrow">Privacidade</p> <p class="consent__message">
+Usamos cookies de análise (Google Analytics) para saber que páginas
+            são mais lidas e melhorar o site. Só os criamos se aceitar — se
+            recusar, não é enviado nada à Google. Guardamos também, no seu
+            navegador, a preferência de tema e esta resposta, num registo local
+            que não o identifica. Saiba mais na
+<a class="consent__link" href="/privacidade">política de privacidade</a>.
+</p> </div> <div class="consent__actions"> <button class="consent__button consent__button--solid" type="button" data-consent-choice="aceite">
+Aceitar
+</button> <button class="consent__button" type="button" data-consent-choice="recusa">
+Recusar
+</button> </div> </div> </section> <!--
+      Regresso ao topo — fixo no canto inferior direito. Fica só com a seta,
+      desenhada com uma borda em CSS, e o que ele faz é dito pela dica, que
+      aparece ao apontar. Vive aqui, e não numa página, para o terem todas.
+    --> <button class="to-top" type="button" data-to-top data-visible="false" aria-label="Voltar ao topo da página"> <span class="to-top__glyph" aria-hidden="true"></span> <span class="to-top__tip" aria-hidden="true">Voltar ao topo</span> </button> <!-- A primeira janela: o botão aparece quando ela fica para trás. --> <div class="to-top-sentinel" data-to-top-sentinel aria-hidden="true"></div><script type="module">var e=`G-L0EZJTVVEL`,t=!1;function n(){return t}function r(){if(t)return;t=!0;let n=window.dataLayer??[];window.dataLayer=n;let r=(...e)=>{n.push(e)};window.gtag=r;let i=document.createElement(`script`);i.async=!0,i.src=`https://www.googletagmanager.com/gtag/js?id=${e}`,document.head.append(i),r(`js`,new Date),r(`config`,e)}var i=`consentimento`;function a(){try{let e=window.localStorage.getItem(i);return e===`aceite`||e===`recusa`?e:null}catch{return null}}function o(e){try{window.localStorage.setItem(i,e)}catch{}}function s(e){e===`aceite`?r():n()&&window.location.reload()}function c(){let e=document.querySelector(`[data-consent]`);if(e===null)return;let t=a();t===null?e.dataset.state=`open`:s(t),e.addEventListener(`click`,t=>{let n=t.target;if(!(n instanceof Element))return;let r=n.closest(`[data-consent-choice]`);if(r===null)return;let i=r.dataset.consentChoice===`recusa`?`recusa`:`aceite`;o(i),s(i),e.dataset.state=`closed`}),document.querySelector(`[data-consent-open]`)?.addEventListener(`click`,()=>{e.dataset.state=`open`,e.querySelector(`[data-consent-choice]`)?.focus()})}var l=`[data-to-top]`,u=`[data-to-top-sentinel]`;function d(){let e=document.querySelector(l),t=document.querySelector(u);e!==null&&t!==null&&(new IntersectionObserver(t=>{for(let n of t)e.dataset.visible=n.isIntersecting?`false`:`true`}).observe(t),e.addEventListener(`click`,()=>{window.scrollTo({top:0})}))}c(),d();</script> </body> </html><script type="module" src="/_assets/404.astro_astro_type_script_index_0_lang.Chd7ewKq.js"></script>
