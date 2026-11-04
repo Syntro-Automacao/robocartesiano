@@ -1,20 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  As páginas do site. Sem `lastmod`: o Google ignora-o quando não é de
-  confiança, e uma data errada só atrapalha. Uma página nova acrescenta-se
-  aqui à mão.
+  As páginas do site, para o Google Search Console.
+
+  O `lastmod` é a data da última alteração real do conteúdo de cada página,
+  não a data do build. O layout partilhado (`Base.astro`) conta: quando ele
+  muda, todas as páginas mudam e todas levam a mesma data. O Google só dá
+  valor ao campo enquanto ele for de confiança, por isso uma data que se
+  repetisse em todas as publicações sem nada mudar deixaria de servir.
+
+  Nada de `changefreq` nem `priority`, que o Google declara ignorar.
+  Uma página nova acrescenta-se aqui à mão, com a data do dia.
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.robocartesiano.com.br/</loc>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://www.robocartesiano.com.br/synbot-mini-25/</loc>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://www.robocartesiano.com.br/contato/</loc>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://www.robocartesiano.com.br/privacidade/</loc>
+    <lastmod>2026-11-04</lastmod>
   </url>
 </urlset>
