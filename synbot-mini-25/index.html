@@ -36,7 +36,28 @@
           );
         }
       })();
-    </script><link rel="stylesheet" href="/_assets/pagina.B2dgQeyB.css"><link rel="stylesheet" href="/_assets/Base.CLbrkBze.css"><link rel="stylesheet" href="/_assets/synbot-mini-25.CCsHiRXN.css"></head> <body> <!--
+    </script><!--
+      Google Analytics com o modo de consentimento. A etiqueta arranca sempre
+      — é isso que faz o Google reconhecer a instalação — mas começa com o
+      consentimento negado: até alguém aceitar não há cookies nem
+      identificadores, e a Google recebe apenas sinais anónimos e agregados.
+      Quem sobe o consentimento a concedido é o `consent.ts`, ao ler a
+      resposta. O identificador é público: anda no código de qualquer site.
+    --><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('consent', 'default', {
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        analytics_storage: 'denied',
+        wait_for_update: 500,
+      });
+      gtag('js', new Date());
+      gtag('config', 'G-L0EZJTVVEL');
+    </script><script async src="https://www.googletagmanager.com/gtag/js?id=G-L0EZJTVVEL"></script><link rel="stylesheet" href="/_assets/pagina.B2dgQeyB.css"><link rel="stylesheet" href="/_assets/Base.CLbrkBze.css"><link rel="stylesheet" href="/_assets/synbot-mini-25.CCsHiRXN.css"></head> <body> <!--
       Ligação de salto: a primeira paragem do teclado. Fica escondida até
       receber foco, para não competir com a composição.
     --><a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>  <div class="produto"> <div class="band band--dark hero"> <header class="site-header"> <!--
@@ -49,15 +70,16 @@ Seções
 ×
 </button> <figure class="lightbox__frame"> <img class="lightbox__img" alt="" decoding="async"> <figcaption class="lightbox__caption" id="lightbox-caption"></figcaption> </figure> </div> </div>  <!--
       Aviso de privacidade — a primeira coisa que se lê. Vive aqui, e não numa
-      página, para aparecer em todo o site até a pessoa responder. Só serve
-      para isso: o site não usa cookies de análise nem de publicidade. Começa
-      fechado e é o script que o abre, a quem ainda não respondeu.
+      página, para aparecer em todo o site até a pessoa responder. É ele que
+      decide se os cookies de análise chegam a ser criados. Começa fechado e é
+      o script que o abre, a quem ainda não respondeu.
     --> <section class="consent" data-consent data-state="closed" aria-label="Aviso de privacidade"> <div class="consent__inner"> <div class="consent__text"> <p class="consent__eyebrow">Privacidade</p> <p class="consent__message">
 Usamos cookies de análise (Google Analytics) para saber que páginas
-            são mais lidas e melhorar o site. Só os criamos se aceitar — se
-            recusar, não é enviado nada à Google. Guardamos também, no seu
-            navegador, a preferência de tema e esta resposta, num registo local
-            que não o identifica. Saiba mais na
+            são mais lidas e melhorar o site. Só os criamos se aceitar; se
+            recusar, a Google recebe apenas sinais anónimos e agregados, sem
+            cookies nem identificadores. Guardamos também, no seu navegador, a
+            preferência de tema e esta resposta, num registo local que não o
+            identifica. Saiba mais na
 <a class="consent__link" href="/privacidade">política de privacidade</a>.
 </p> </div> <div class="consent__actions"> <button class="consent__button consent__button--solid" type="button" data-consent-choice="aceite">
 Aceitar
@@ -67,4 +89,4 @@ Recusar
       Regresso ao topo — fixo no canto inferior direito. Fica só com a seta,
       desenhada com uma borda em CSS, e o que ele faz é dito pela dica, que
       aparece ao apontar. Vive aqui, e não numa página, para o terem todas.
-    --> <button class="to-top" type="button" data-to-top data-visible="false" aria-label="Voltar ao topo da página"> <span class="to-top__glyph" aria-hidden="true"></span> <span class="to-top__tip" aria-hidden="true">Voltar ao topo</span> </button> <!-- A primeira janela: o botão aparece quando ela fica para trás. --> <div class="to-top-sentinel" data-to-top-sentinel aria-hidden="true"></div><script type="module">var e=`G-L0EZJTVVEL`,t=!1;function n(){return t}function r(){if(t)return;t=!0;let n=window.dataLayer??[];window.dataLayer=n;let r=(...e)=>{n.push(e)};window.gtag=r;let i=document.createElement(`script`);i.async=!0,i.src=`https://www.googletagmanager.com/gtag/js?id=${e}`,document.head.append(i),r(`js`,new Date),r(`config`,e)}var i=`consentimento`;function a(){try{let e=window.localStorage.getItem(i);return e===`aceite`||e===`recusa`?e:null}catch{return null}}function o(e){try{window.localStorage.setItem(i,e)}catch{}}function s(e){e===`aceite`?r():n()&&window.location.reload()}function c(){let e=document.querySelector(`[data-consent]`);if(e===null)return;let t=a();t===null?e.dataset.state=`open`:s(t),e.addEventListener(`click`,t=>{let n=t.target;if(!(n instanceof Element))return;let r=n.closest(`[data-consent-choice]`);if(r===null)return;let i=r.dataset.consentChoice===`recusa`?`recusa`:`aceite`;o(i),s(i),e.dataset.state=`closed`}),document.querySelector(`[data-consent-open]`)?.addEventListener(`click`,()=>{e.dataset.state=`open`,e.querySelector(`[data-consent-choice]`)?.focus()})}var l=`[data-to-top]`,u=`[data-to-top-sentinel]`;function d(){let e=document.querySelector(l),t=document.querySelector(u);e!==null&&t!==null&&(new IntersectionObserver(t=>{for(let n of t)e.dataset.visible=n.isIntersecting?`false`:`true`}).observe(t),e.addEventListener(`click`,()=>{window.scrollTo({top:0})}))}c(),d();</script> </body> </html><script type="module" src="/_assets/synbot-mini-25.astro_astro_type_script_index_0_lang.Btxj6YUf.js"></script>
+    --> <button class="to-top" type="button" data-to-top data-visible="false" aria-label="Voltar ao topo da página"> <span class="to-top__glyph" aria-hidden="true"></span> <span class="to-top__tip" aria-hidden="true">Voltar ao topo</span> </button> <!-- A primeira janela: o botão aparece quando ela fica para trás. --> <div class="to-top-sentinel" data-to-top-sentinel aria-hidden="true"></div><script type="module">var e=!1;function t(){return e}function n(){e||(e=!0,window.gtag?.(`consent`,`update`,{analytics_storage:`granted`}))}var r=`consentimento`;function i(){try{let e=window.localStorage.getItem(r);return e===`aceite`||e===`recusa`?e:null}catch{return null}}function a(e){try{window.localStorage.setItem(r,e)}catch{}}function o(e){e===`aceite`?n():t()&&window.location.reload()}function s(){let e=document.querySelector(`[data-consent]`);if(e===null)return;let t=i();t===null?e.dataset.state=`open`:o(t),e.addEventListener(`click`,t=>{let n=t.target;if(!(n instanceof Element))return;let r=n.closest(`[data-consent-choice]`);if(r===null)return;let i=r.dataset.consentChoice===`recusa`?`recusa`:`aceite`;a(i),o(i),e.dataset.state=`closed`}),document.querySelector(`[data-consent-open]`)?.addEventListener(`click`,()=>{e.dataset.state=`open`,e.querySelector(`[data-consent-choice]`)?.focus()})}var c=`[data-to-top]`,l=`[data-to-top-sentinel]`;function u(){let e=document.querySelector(c),t=document.querySelector(l);e!==null&&t!==null&&(new IntersectionObserver(t=>{for(let n of t)e.dataset.visible=n.isIntersecting?`false`:`true`}).observe(t),e.addEventListener(`click`,()=>{window.scrollTo({top:0})}))}s(),u();</script> </body> </html><script type="module" src="/_assets/synbot-mini-25.astro_astro_type_script_index_0_lang.Btxj6YUf.js"></script>
